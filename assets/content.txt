@@ -1,0 +1,73 @@
+INTRODUCTION
+============
+
+
+MAIN CONTENT
+============
+
+SQUARE
+<div id="square"></div>
+
+#square {
+width: 100px;
+height: 100px); 
+}
+
+
+RECTANGLE
+<div id="rectangle"></div>
+
+#rectangle {
+width: 100px;  
+height: 60px; 
+}
+
+DIAMOND
+<div id="diamond"></div>
+
+#diamond {
+width: 80px;  
+height: 80px; 
+margin: 3px 0 0 30px;
+transform: rotate(45deg);
+transform-origin: 1 100%;
+}
+
+PARRALLELOGRAM
+<div id="parallel-left"></div>
+
+#parallel-left {
+width: 100px;
+height: 70px;
+transform: skew(20deg);
+}
+
+<div id="parallel-right"></div>
+
+#parallel-right {
+width: 100px;
+height: 70px;
+transform: skew(-20deg);
+}
+
+TRAPEZIUM
+<div id="trapeze-up"></div>
+
+#trapeze-up {
+height: 0;
+width: 100px;
+border-bottom: 100px solid var(--color);
+border-left: 60px solid transparent;
+border-right: 60px solid transparent;
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+HTML FRIENDLY VERSION (copy and pastable)
+
+SQUARE
+&lt;div id="square&gt;&lt;/div&gt;
+
+#square {
+width: 100px;
+height: 100px); 
+}
