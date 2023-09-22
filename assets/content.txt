@@ -187,7 +187,79 @@ width: 45px;
 border-radius:90px 0 0 90px;
 }
 
+CIRCLEQUARTER
+<div id="quartercircle-top"></div>
 
+#quartercircle-top {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 90px 0 0 0;
+}
+
+#quartercircle-right {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 90px 0 0;
+}
+
+#quartercircle-bottom {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 0 90px 0;
+}
+
+#quartercircle-left {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 0 0 90px;
+}
+
+PACMANCIRCLE
+<div id="pacman-top"></div>
+
+#pacman-top {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid transparent;
+border-left: 60px solid var(--color);
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
+
+#pacman-right {
+height: 0px;
+width: 0px;
+border-right: 60px solid transparent;
+border-top: 60px solid var(--color);
+border-left: 60px solid var(--color);
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
+
+#pacman-bottom {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid var(--color);;
+border-left: 60px solid var(--color);
+border-bottom: 60px solid transparent;
+border-radius: 60px;
+}
+
+#pacman-left {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid var(--color);
+border-left: 60px solid transparent;
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 HTML FRIENDLY VERSION (copy and pastable)
