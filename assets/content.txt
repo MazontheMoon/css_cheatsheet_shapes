@@ -121,6 +121,24 @@ border-top: 50px solid transparent;
 border-bottom: 50px solid transparent;
 }
 
+#triangle-up-left {
+width: 0;
+height: 0;
+border-top: 50px solid var(--color);
+border-bottom: 50 px solid transparent;
+border-left: 50px solid var(--color);
+border-right: 50 px solid transparent;
+}
+
+#triangle-up-right {
+width: 0;
+height: 0;
+border-top: 50px solid var(--color);
+border-bottom: 50 px solid transparent;
+border-left: 50px solid transparent;
+border-right: 50 px solid var(--color);
+}
+
 CIRCLE
 <div id="circle"></div>
 
@@ -129,6 +147,15 @@ background-color: var(--color);
 width: 90px;
 height: 90px;
 border-radius: 45px;
+}
+
+#duo-circle {
+width: 0;
+border-top: 50px solid transparent;
+border-left: 100px dotted var(--color);
+border-right: 100px dotted var(--color);
+border-bottom: 50px solid transparent;
+border-radius: 150px;
 }
 
 #circle-segment {
@@ -261,6 +288,48 @@ border-bottom: 60px solid var(--color);
 border-radius: 60px;
 }
 
+HEART
+<div id="heart-left"></div>
+
+#heart-left {
+width: 0;
+height:0;
+border-color: red;
+border-style: dotted;
+border-width: 0 80px 80px 0;
+}
+
+#heart-right {
+width: 0;
+height:0;
+border-color: red;
+border-style: dotted;
+border-width: 0 0 80px 80px;
+}
+
+BOOKMARK
+<div id"bookmark"></div>
+
+#bookmark {
+width: 0;
+height: 100px;
+border-left: 50px solid var(--color);
+border-right: 50px solid var(--color);
+border-bottom: 35px solid transparent;
+}
+
+HOURGLASS
+<div id="hourglass"></div>
+
+#hourglass {
+width: 0px;
+border-top: 100px dotted var(--color);
+border-left: 90px solid transparent;
+border-right: 90px solid transparent;
+border-bottom: 100px dotted var(--color);
+border-radius: 200px;
+}
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 HTML FRIENDLY VERSION (copy and pastable)
 
@@ -269,5 +338,5 @@ SQUARE
 
 #square {
 width: 100px;
-height: 100px); 
+height: 100px; 
 }
