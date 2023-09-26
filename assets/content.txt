@@ -1,7 +1,15 @@
+============
+TITLE
+============
+Simple CSS shapes
+
+============
 INTRODUCTION
 ============
 
+A handy reference of CSS only basic shapes.
 
+============
 MAIN CONTENT
 ============
 
@@ -340,3 +348,325 @@ SQUARE
 width: 100px;
 height: 100px; 
 }
+
+RECTANGLE
+&lt;div id="rectangle"&gt;&lt;/div&gt;
+
+#rectangle {
+width: 100px;  
+height: 60px; 
+}
+
+DIAMOND
+&lt;div id="diamond"&gt;&lt;/div&gt;
+
+#diamond {
+width: 80px;  
+height: 80px; 
+margin: 3px 0 0 30px;
+transform: rotate(45deg);
+transform-origin: 1 100%;
+}
+
+PARRALLELOGRAM
+&lt;div id="parallel-left"&gt;&lt;/div&gt;
+
+#parallel-left {
+width: 100px;
+height: 70px;
+transform: skew(20deg);
+}
+
+&lt;div id="parallel-right"&gt;&lt;/div&gt;
+
+#parallel-right {
+width: 100px;
+height: 70px;
+transform: skew(-20deg);
+}
+
+TRAPEZIUM
+&lt;div id="trapeze-up"&gt;&lt;/div&gt;
+
+#trapeze-up {
+height: 0;
+width: 100px;
+border-bottom: 100px solid var(--color);
+border-left: 60px solid transparent;
+border-right: 60px solid transparent;
+}
+
+#trapeze-down {
+height: 0;
+width: 100px;
+border-top: 100px solid var(--color);
+border-left: 60px solid transparent;
+border-right: 60px solid transparent;
+}
+
+#trapeze-left {
+height:100px;
+width: 0;
+border-right: 100px solid var(--color);
+border-top: 60px solid transparent;
+border-bottom: 60px solid transparent;
+}
+
+#trapeze-right {
+height:100px;
+width: 0;
+border-left: 100px solid var(--color);
+border-top: 60px solid transparent;
+border-bottom: 60px solid transparent;
+}
+
+
+TRIANGLE
+&lt;div id="triangle-up"&gt;&lt;/div&gt;
+
+#triangle-up {
+width: 0;
+height: 0;
+border-bottom: 100px solid var(--color);
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+}
+
+#triangle-right {
+width: 0;
+height: 0;
+border-left: 100px solid var(--color);
+border-top: 50px solid transparent;
+border-bottom: 50px solid transparent;
+}
+ 
+#triangle-down {
+width: 0;
+height: 0;
+border-top: 100px solid var(--color);
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+}
+
+#triangle-left{
+width: 0;
+height: 0;
+border-right: 100px solid var(--color);
+border-top: 50px solid transparent;
+border-bottom: 50px solid transparent;
+}
+
+#triangle-up-left {
+width: 0;
+height: 0;
+border-top: 50px solid var(--color);
+border-bottom: 50 px solid transparent;
+border-left: 50px solid var(--color);
+border-right: 50 px solid transparent;
+}
+
+#triangle-up-right {
+width: 0;
+height: 0;
+border-top: 50px solid var(--color);
+border-bottom: 50 px solid transparent;
+border-left: 50px solid transparent;
+border-right: 50 px solid var(--color);
+}
+
+CIRCLE
+&lt;div id="circle"&gt;&lt;/div&gt;
+
+#circle {
+background-color: var(--color);
+width: 90px;
+height: 90px;
+border-radius: 45px;
+}
+
+#duo-circle {
+width: 0;
+border-top: 50px solid transparent;
+border-left: 100px dotted var(--color);
+border-right: 100px dotted var(--color);
+border-bottom: 50px solid transparent;
+border-radius: 150px;
+}
+
+#circle-segment {
+background-color: var(--color);
+width: 0px;
+height: 0px;
+border-right: 60px solid var(--color1);
+border-top: 60px solid var(--color2);
+border-left: 60px solid var(--color3);
+border-bottom: 60px solid var(--color4);
+border-radius: 60px;
+}
+
+#oval-wide {
+background-color: var(--color);
+width: 180px;
+height: 90px;
+border-radius: 90px/45px;
+}
+
+#oval-tall{
+background-color: var(--color);
+width: 90px;
+height: 180px;
+border-radius: 45px/90px;
+}
+
+SEMICIRCLE
+&lt;div id="semicircle-top"&gt;&lt;/div&gt;
+
+#semicircle-top {
+background-color: var(--color);
+height: 45px;
+width: 90px;
+border-radius: 90px 90px 0 0;
+}
+
+#semicircle-right {
+background-color: var(--color);
+height: 90px;
+width: 45px;
+border-radius: 0 90px 90px 0;
+}
+
+#semicircle-bottom {
+background-color: var(--color);
+height: 45px;
+width: 90px;
+border-radius: 0 0 90px 90px;
+}
+
+#semicircle-left {
+background-color: var(--color);
+height: 90px;
+width: 45px;
+border-radius:90px 0 0 90px;
+}
+
+CIRCLEQUARTER
+&lt;div id="quartercircle-top"&gt;&lt;/div&gt;
+
+#quartercircle-top {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 90px 0 0 0;
+}
+
+#quartercircle-right {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 90px 0 0;
+}
+
+#quartercircle-bottom {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 0 90px 0;
+}
+
+#quartercircle-left {
+background-color: var(--color);
+height: 90px;
+width: 90px;
+border-radius: 0 0 0 90px;
+}
+
+PACMANCIRCLE
+&lt;div id="pacman-top"&gt;&lt;/div&gt;
+
+#pacman-top {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid transparent;
+border-left: 60px solid var(--color);
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
+
+#pacman-right {
+height: 0px;
+width: 0px;
+border-right: 60px solid transparent;
+border-top: 60px solid var(--color);
+border-left: 60px solid var(--color);
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
+
+#pacman-bottom {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid var(--color);;
+border-left: 60px solid var(--color);
+border-bottom: 60px solid transparent;
+border-radius: 60px;
+}
+
+#pacman-left {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--color);
+border-top: 60px solid var(--color);
+border-left: 60px solid transparent;
+border-bottom: 60px solid var(--color);
+border-radius: 60px;
+}
+
+HEART
+&lt;div id="heart-left"&gt;&lt;/div&gt;
+
+#heart-left {
+width: 0;
+height:0;
+border-color: red;
+border-style: dotted;
+border-width: 0 80px 80px 0;
+}
+
+#heart-right {
+width: 0;
+height:0;
+border-color: red;
+border-style: dotted;
+border-width: 0 0 80px 80px;
+}
+
+BOOKMARK
+&lt;div id"bookmark"&gt;&lt;/div&gt;
+
+#bookmark {
+width: 0;
+height: 100px;
+border-left: 50px solid var(--color);
+border-right: 50px solid var(--color);
+border-bottom: 35px solid transparent;
+}
+
+HOURGLASS
+&lt;div id="hourglass"&gt;&lt;/div&gt;
+
+#hourglass {
+width: 0px;
+border-top: 100px dotted var(--color);
+border-left: 90px solid transparent;
+border-right: 90px solid transparent;
+border-bottom: 100px dotted var(--color);
+border-radius: 200px;
+}
+
+============
+FOOTER
+============
+Made by me! [social media links]
+
