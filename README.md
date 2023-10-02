@@ -21,6 +21,7 @@ As a developer I want a quick and easy to use reference guide.
 
 * Font Awesome
 * Google fonts
+* Coolors
  
 ## Contributors
 
