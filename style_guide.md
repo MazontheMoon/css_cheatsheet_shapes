@@ -28,3 +28,29 @@ Text <br>
 hsl(240, 10%, 6%)
 
 ## Screensize breakpoints
+
+MOBILE (414px breakpoint): <br>
+Logo: 3rem<br>
+Large: 2rem (2.8rem LH)<br>
+Button: 1.5rem <br>
+Small: 1rem (1.4rem LH)<br>
+
+TABLET (768px breakpoint):<br>
+Logo: 3rem<br>
+Nav: 1.8rem<br>
+Large: 2rem (2.8rem LH)<br>
+Button: 1.5rem<br>
+Small: 1.25rem (1.8rem LH)<br>
+
+LAPTOP (1024px breakpoint):<br>
+Logo: 3.5rem<br>
+Nav: 1.8rem<br>
+Large: 3rem (4rem LH)<br>
+Button: 1.8rem<br>
+Small: 1.5rem (2rem LH)<br>
+
+DESKTOP (1440px breakpoint):<br>
+Logo: 5rem<br>
+Large: 4rem (5rem LH)<br>
+Button: 2.6rem<br>
+Small: 1.8rem (2.6rem LH)<br>
