@@ -8,12 +8,24 @@
 
 ## Code Naming Conventions
 
-Naming convention using hyphens (-) to separate words:<br>
-Example: *#section-content*
+[BEM](https://css-tricks.com/bem-101/)
+
+/* Block component */<br>
+.btn {}
+.container {}
+
+/* Element that depends upon the block */ <br>
+.btn__price {}
+.container__title
+
+/* Modifier that changes the style of the block */<br>
+.btn--dark {} <br>
+.btn--big {}
+.container__gallery--dark {}
 
 ## Git Commit Naming Conventions
 
-**Keyword: Description FILE**
+Keyword: Description FILE
 
 *Examples:*
 
