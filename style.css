@@ -1,0 +1,149 @@
+/*============
+Page variables
+==============*/
+
+:root {
+    /*color scheme*/
+    --col-primary-bg: hsl(278, 81%, 6%);
+    --col-accent: hsl(167, 67%, 35%);
+    --col-font: hsl(108, 24%, 96%);
+
+  
+    /*fonts*/
+    --font-main: 'Luckiest Guy', 'Impact', cursive;
+    --font-heading: 'Poppins', 'Tahoma', sans-serif;
+    --font-code: 'Courier Prime', 'Courier New', monospace; 
+  }
+  
+  /*======================================
+    Back to Basics (reset browser defaults)
+    =======================================*/
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  html {
+    overscroll-behavior: none;
+  }
+  
+  body * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  /*reset default font*/
+  :is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
+    font-family: Verdana, sans-serif;
+  }
+  
+  :where(ul, ol) {
+    list-style: none;
+    margin: 0;
+  }
+  
+  :where(ul, ol) a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+/*====
+LAYOUT
+=====*/
+
+
+/*===
+a11y
+=====*/
+
+@media (prefers-color-scheme: dark) {
+    root {
+        --col-primary-bg: hsl(278, 81%, 6%);
+        --col-font: hsl(108, 24%, 96%);
+    }
+  
+    img {
+      filter: brightness(0.8) saturate(1.25);
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    root {
+        --col-primary-bg: hsl(108, 24%, 96%);
+        --col-font: hsl(278, 81%, 6%);
+    }
+  }
+
+  /*minimal animation and scroll user preference*/
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+/*======================
+Ye Olde Time Print View
+=======================*/
+@media print {
+    body * {
+      background-color: unset;
+      background: none;
+      color: #000;
+      font-size: 14pt;
+      font-weight: normal;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+    }
+  
+    /*remove unneeded elements*/
+    nav {
+      display: none;
+    }
+  
+    footer ul {
+      flex-direction: column;
+    }
+  
+    /*display links*/
+  
+    :where(aside, footer) a:link {
+      color: #000;
+      margin: 0;
+      display: block;
+      font-size: 12pt;
+    }
+  
+    :where(aside, footer) a::after {
+      content: " [" attr(href) "]";
+    }
+  
+    :where(aside, footer) a:link,
+    :where(aside, footer) a:visited {
+      color: #000;
+      background: none;
+      padding: 0;
+    }
+  
+    abbr::after {
+      content: " [" attr(title) "]";
+    }
+  }
