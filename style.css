@@ -62,7 +62,10 @@ Page variables
 /*====
 LAYOUT
 =====*/
-
+body {
+  background-color: var(--col-primary-bg);
+  color: var(--col-font)
+}
 
 /*===
 a11y
