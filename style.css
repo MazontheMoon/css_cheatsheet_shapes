@@ -65,8 +65,57 @@ LAYOUT
 body {
   background-color: var(--col-primary-bg);
   color: var(--col-font)
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav nav"
+  "main main"
+  "footer footer";
+  grid-auto-flow: column;
 }
 
+header {
+  grid-area: header;
+  border: 2px red;
+}
+
+nav {
+  grid-area: nav;
+  border: 2px blue;
+}
+
+
+main {
+  grid-area: main;
+  border: 2px green;
+}
+
+
+footer {
+  grid-area: footer;
+  border: 2px purple;
+}
+
+
+/*=============
+responsiveness
+===============*/
+
+/*tablet size screen*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*laptops and monitor size screen*/
+@media only screen and (min-width: 1024px) {
+  body {
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "nav main"
+    "footer footer";
+  }
+}
 /*===
 a11y
 =====*/
