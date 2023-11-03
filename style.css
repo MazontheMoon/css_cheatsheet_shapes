@@ -10,9 +10,15 @@ Page variables
 
   
     /*fonts*/
-    --font-main: 'Luckiest Guy', 'Impact', cursive;
-    --font-heading: 'Poppins', 'Tahoma', sans-serif;
+    --font-heading: 'Luckiest Guy', 'Impact', cursive;
+    --font-main: 'Poppins', 'Tahoma', sans-serif;
     --font-code: 'Courier Prime', 'Courier New', monospace; 
+    --fnt-sz-title: clamp(2rem, 1.5rem + 1.667vw, 3rem);
+    --fnt-sz-heading: clamp(1.5rem, 1.125rem + 1.25vw, 2.25rem);
+    --fnt-sz-subheading: clamp(1.125rem, 0.938rem + 0.625vw, 1.5rem);
+    --fnt-sz-text: clamp(0.75rem, 0.563rem + 0.625vw, 1.125rem);
+
+
   }
   
   /*======================================
@@ -64,7 +70,7 @@ LAYOUT
 =====*/
 body {
   background-color: var(--col-primary-bg);
-  color: var(--col-font)
+  color: var(--col-font);
   display: grid;
   grid-template-areas: 
   "header header"
@@ -76,24 +82,32 @@ body {
 
 header {
   grid-area: header;
-  border: 2px red;
+  border: solid 2px red;
+}
+
+header .title {
+  text-align:center;
+  font-family: var(--font-heading);
+  font-size: var(--fnt-sz-title);
+
+
 }
 
 nav {
   grid-area: nav;
-  border: 2px blue;
+  border: solid 2px blue;
 }
 
 
 main {
   grid-area: main;
-  border: 2px green;
+  border: solid 2px green;
 }
 
 
 footer {
   grid-area: footer;
-  border: 2px purple;
+  border: solid 2px purple;
 }
 
 
