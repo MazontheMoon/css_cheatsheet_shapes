@@ -77,7 +77,6 @@ body {
   "nav nav"
   "main main"
   "footer footer";
-  grid-auto-flow: column;
 }
 
 header {
@@ -86,11 +85,10 @@ header {
 }
 
 header .title {
-  text-align:center;
+  text-align: center;
   font-family: var(--font-heading);
   font-size: var(--fnt-sz-title);
-
-
+  letter-spacing: 3px;
 }
 
 nav {
@@ -102,8 +100,15 @@ nav {
 main {
   grid-area: main;
   border: solid 2px green;
+  width: 95%;
+  margin: 0 auto;
 }
 
+section {
+margin: 1rem;
+padding: 0.4rem;
+border: solid 2px orange;
+}
 
 footer {
   grid-area: footer;
