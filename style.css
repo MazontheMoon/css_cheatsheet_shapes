@@ -7,6 +7,7 @@ Page variables
     --col-primary-bg: hsl(278, 81%, 6%);
     --col-accent: hsl(167, 67%, 35%);
     --col-font: hsl(108, 24%, 96%);
+  
 
   
     /*fonts*/
@@ -66,7 +67,7 @@ Page variables
   }
   
 /*====
-LAYOUT
+layout
 =====*/
 body {
   background-color: var(--col-primary-bg);
@@ -115,7 +116,95 @@ footer {
   border: solid 2px purple;
 }
 
+/*====
+shapes
+=====*/
+.shape__example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border:solid 1px white;
+  
+}
 
+.shape {
+  background-color: var(--col-accent);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.rectangle {
+  width: 100px;
+  height: 60px;
+}
+
+.diamond {
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 1 100%;
+}
+
+.parrallelogram-left {
+  width: 100px;
+  height: 70px;
+  transform: skew(20deg);
+}
+
+.parrallelogram-right {
+  width: 100px;
+  height: 70px;
+  transform: skew(-20deg);
+}
+
+.trapezium-up {
+  height: 0;
+  width: 100px;
+  background-color: transparent;
+  border-top: 100px solid var(--col-accent);
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.trapezium-down {
+  height: 0;
+  width: 100px;
+  background-color: transparent;
+  border-bottom: 100px solid var(--col-accent);
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.trapezium-right {
+  height:100px;
+  width: 0;
+  background-color: transparent;
+  border-left: 100px solid var(--col-accent);
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.trapezium-left {
+  height:100px;
+width: 0;
+background-color: transparent;
+border-right: 100px solid var(--col-accent);
+border-top: 60px solid transparent;
+border-bottom: 60px solid transparent;
+}
+
+.triangle-up {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid var(--col-accent);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
 /*=============
 responsiveness
 ===============*/
