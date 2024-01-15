@@ -223,6 +223,74 @@ border-bottom: 60px solid transparent;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
 }
+
+.triangle-right {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-left: 100px solid var(--col-accent);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.triangle-upright {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--col-accent);
+  border-left: 50px solid transparent;
+  border-right: 50px solid var(--col-accent);
+  border-bottom: 50px solid transparent;
+}
+
+.triangle-upleft {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-top: 50px solid var(--col-accent);
+  border-left: 50px solid var(--col-accent);;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.circle {
+width: 90px;
+height: 90px;
+border-radius: 45px;
+}
+
+.duo-circle {
+  width: 0;
+border-top: 50px solid transparent;
+border-left: 100px dotted var(--col-accent);
+border-right: 100px dotted var(--col-accent);
+border-bottom: 50px solid transparent;
+border-radius: 150px;
+}
+
+.circle-segment {
+  width: 0px;
+height: 0px;
+border-right: 60px solid var(--col-accent);
+border-top: 60px solid var(--col-font);
+border-left: 60px solid var(--col-accent);
+border-bottom: 60px solid var(--col-font);
+border-radius: 60px;
+}
+
+.oval-wide {
+  background-color: var(--col-accent);
+width: 180px;
+height: 90px;
+border-radius: 90px/45px;
+}
+
+.oval-tall {
+  background-color: var(--col-accent);
+width: 90px;
+height: 180px;
+border-radius: 45px/90px;
+}
 /*=============
 responsiveness
 ===============*/
