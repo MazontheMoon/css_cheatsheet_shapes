@@ -291,6 +291,136 @@ width: 90px;
 height: 180px;
 border-radius: 45px/90px;
 }
+
+.semicircle-top {
+  background-color: var(--col-accent);
+  height: 45px;
+  width: 90px;
+  border-radius: 90px 90px 0 0;
+}
+
+.semicircle-right {
+  background-color: var(--col-accent);
+height: 90px;
+width: 45px;
+border-radius: 0 90px 90px 0;
+}
+
+.semicircle-left {
+  background-color: var(--col-accent);
+height: 90px;
+width: 45px;
+border-radius:90px 0 0 90px;
+}
+
+.semicircle-bottom {
+  background-color: var(--col-accent);
+  height: 45px;
+  width: 90px;
+  border-radius: 0 0 90px 90px;
+}
+
+.quartercircle-top {
+  background-color: var(--col-accent);
+height: 90px;
+width: 90px;
+border-radius: 90px 0 0 0;
+}
+
+.quartercircle-right {
+  background-color: var(--col-accent);
+height: 90px;
+width: 90px;
+border-radius: 0 90px 0 0;
+}
+
+.quartercircle-bottom {
+  background-color: var(--col-accent);
+height: 90px;
+width: 90px;
+border-radius: 0 0 90px 0;
+}
+
+.quartercircle-left {
+  background-color: var(--col-accent);
+height: 90px;
+width: 90px;
+border-radius: 0 0 0 90px;
+}
+
+.pacman-top {
+height: 0px;
+width: 0px;
+border-right: 60px solid var(--col-accent);
+border-top: 60px solid transparent;
+border-left: 60px solid var(--col-accent);
+border-bottom: 60px solid var(--col-accent);
+border-radius: 60px;
+}
+
+.pacman-bottom {
+  height: 0px;
+  width: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid var(--col-accent);
+  border-left: 60px solid var(--col-accent);
+  border-bottom: 60px solid var(--col-accent);
+  border-radius: 60px;
+}
+
+.pacman-right {
+  height: 0px;
+  width: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid var(--col-accent);
+  border-left: 60px solid var(--col-accent);
+  border-bottom: 60px solid var(--col-accent);
+  border-radius: 60px;
+}
+
+.pacman-left {
+  height: 0px;
+  width: 0px;
+  border-right: 60px solid var(--col-accent);
+  border-top: 60px solid var(--col-accent);
+  border-left: 60px solid transparent;
+  border-bottom: 60px solid var(--col-accent);
+  border-radius: 60px;
+}
+
+.heart-left {
+width: 0;
+height:0;
+border-color: var(--col-accent);
+border-style: dotted;
+border-width: 0 80px 80px 0;
+}
+
+.heart-right {
+  width: 0;
+  height:0;
+  border-color: var(--col-accent);
+  border-style: dotted;
+  border-width: 0 0 80px 80px;
+  }
+
+ .bookmark {
+  width: 0;
+  height: 100px;
+  border-left: 50px solid var(--col-accent);
+  border-right: 50px solid var(--col-accent);
+  border-bottom: 35px solid transparent;
+ } 
+
+ .hourglass {
+  width: 0px;
+  border-top: 100px dotted var(--col-accent);
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 100px dotted var(--col-accent);
+  border-radius: 200px;
+ }
+
 /*=============
 responsiveness
 ===============*/
