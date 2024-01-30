@@ -83,19 +83,37 @@ body {
 header {
   grid-area: header;
   border: solid 2px red;
+  
 }
 
 header .title {
   text-align: center;
   font-family: var(--font-heading);
   font-size: var(--fnt-sz-title);
-  letter-spacing: 3px;
-}
 
+}
+/*=======
+nav menu
+========*/
 nav {
   grid-area: nav;
   border: solid 2px blue;
 }
+
+  .nav__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .nav__list--link {
+    margin: 0.4rem;
+    padding: 0.4rem;
+    flex: 1;
+    border: solid 1px pink;
+    text-align: center;
+    font-weight: bold;
+  }
 
 
 main {
