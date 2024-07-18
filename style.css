@@ -82,7 +82,6 @@ body {
 
 header {
   grid-area: header;
-  border: solid 2px red;
   
 }
 
@@ -90,6 +89,7 @@ header .title {
   text-align: center;
   font-family: var(--font-heading);
   font-size: var(--fnt-sz-title);
+  letter-spacing: 3px;
 
 }
 /*=======
@@ -97,7 +97,7 @@ nav menu
 ========*/
 nav {
   grid-area: nav;
-  border: solid 2px blue;
+
 }
 
   .nav__list {
@@ -110,15 +110,17 @@ nav {
     margin: 0.4rem;
     padding: 0.4rem;
     flex: 1;
-    border: solid 1px pink;
+    border: 1px dotted;
     text-align: center;
     font-weight: bold;
   }
 
-
+  .nav__list--link a:where(:hover, :active, :focus) {
+    color: var(--col-accent);
+  }
 main {
   grid-area: main;
-  border: solid 2px green;
+
   width: 95%;
   margin: 0 auto;
 }
@@ -126,12 +128,18 @@ main {
 section {
 margin: 1rem;
 padding: 0.4rem;
-border: solid 2px orange;
+
+}
+
+section h2 {
+  margin: 1rem 0;
+  padding-bottom: 3px;
+  border-bottom: 2px dotted var(--col-accent);
 }
 
 footer {
   grid-area: footer;
-  border: solid 2px purple;
+
 }
 
 /*====
@@ -420,26 +428,39 @@ border-radius: 60px;
   border-radius: 200px;
  }
 
-/*=============
-responsiveness
-===============*/
+ .shape__code {
+  margin-bottom: 1rem;
+ }
 
-/*tablet size screen*/
-@media only screen and (min-width: 768px) {
-
+/*=====
+footer
+======*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*laptops and monitor size screen*/
-@media only screen and (min-width: 1024px) {
-  body {
-    grid-template-areas: 
-    "header header"
-    "nav main"
-    "nav main"
-    "footer footer";
-  }
+.social_media_list {
+  display: flex;
+  flex-flow: row wrap;
 }
-/*===
+.social_media_list li {
+  margin: 0.4rem;
+}
+
+.social_media_list a {
+  font-size: clamp(1.4rem, 1.6rem, 1.8rem);
+}
+
+.social_media_list a:where(:hover, :active, :focus) {
+  background-color: var(--col-accent);
+  box-shadow: 1px 1px 5px var(--col-accent),
+    -1px -1px 5px var(--col-accent);
+  color: var(--col-font);
+}
+ /*===
 a11y
 =====*/
 
